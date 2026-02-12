@@ -1,0 +1,43 @@
+# Enable/disable plugin behavior
+enabled: true
+
+# How often the task runs (ticks). 10 = every 0.5 seconds.
+tick-interval: 10
+
+# How far golems search for ghasts
+radius: 25.0
+
+# Distance required before the plugin applies damage
+hit-range: 3.5
+
+# Damage applied per hit when in range (7.0 = 3.5 hearts)
+damage: 7.0
+
+# Only target RoseStacker stacked ghasts by their custom name
+stacked-name-only: true
+
+# Name must contain ANY of these strings to count as a stacked ghast
+# (RoseStacker often uses "x" or the multiplication sign "×")
+stacked-name-must-contain-any:
+  - "x Ghast"
+  - "× Ghast"
+
+# Optional: only run in certain worlds
+world-filter:
+  enabled: false
+  worlds:
+    - "world"
+
+# Optional: only run in a specific rectangular area (farm box)
+# Tip: set enabled true and plug in your farm's corners.
+area-filter:
+  enabled: false
+  world: "world"
+  min:
+    x: -1000
+    y: -64
+    z: -1000
+  max:
+    x: 1000
+    y: 320
+    z: 1000
